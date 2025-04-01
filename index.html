@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #24292e 0%, #0366d6 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            margin-top: -50px;
+            padding: 30px;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile-name {
+            margin-left: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #0366d6;
+            margin: 30px 0 15px;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 20px 0 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .tag {
+            display: inline-block;
+            background: #e1e4e8;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+            margin: 0 5px 10px 0;
+        }
+        .project {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #24292e;
+            color: white;
+            margin-top: 50px;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .social a {
+            color: #0366d6;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .social a:hover {
+            color: #0052cc;
+        }
+        .btn {
+            display: inline-block;
+            background: #0366d6;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #0052cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的个人网站</h1>
+        <p>程序员 | 开发者 | 技术爱好者</p>
+    </header>
+
+    <div class="container">
+        <div class="profile">
+            <div class="profile-header">
+                <img src="/api/placeholder/200/200" alt="个人照片" class="profile-img">
+                <div class="profile-name">
+                    <h1>你的名字</h1>
+                    <p>全栈开发工程师</p>
+                    <div class="social">
+                        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                        <a href="mailto:your.email@example.com">Email</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>关于我</h2>
+            <p>
+                你好！我是一名热爱编程和技术的开发者。我拥有扎实的计算机科学背景，对构建高质量、高性能的应用程序充满热情。
+                我不断学习新技术，并将其应用到实际项目中，希望通过自己的技能来解决实际问题，创造价值。
+            </p>
+            <p>
+                除了编程，我还喜欢阅读技术书籍、参与开源项目以及分享技术知识。在业余时间，我喜欢探索新的编程语言和框架，不断拓展自己的技术视野。
+            </p>
+
+            <h2>技能专长</h2>
+            <div>
+                <span class="tag">JavaScript</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Git</span>
+                <span class="tag">AWS</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">RESTful API</span>
+            </div>
+
+            <h2>工作经历</h2>
+            <div class="project">
+                <h3>高级前端开发工程师 - XX科技有限公司</h3>
+                <p>2022年4月 - 至今</p>
+                <p>
+                    负责公司核心产品的前端架构设计和开发，优化用户体验和性能。
+                    带领前端团队完成关键项目，推动前端技术栈升级和最佳实践的建立。
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>全栈开发工程师 - XX信息技术有限公司</h3>
+                <p>2020年1月 - 2022年3月</p>
+                <p>
+                    参与企业级应用的全栈开发，使用React构建前端界面，Node.js开发后端API。
+                    实现了多个核心功能模块，并负责数据库设计和优化。
+                </p>
+            </div>
+
+            <h2>项目展示</h2>
+            <div class="project">
+                <h3>智能任务管理系统</h3>
+                <p>
+                    一个基于React和Node.js的全栈应用，帮助用户高效管理和跟踪日常任务。
+                    特点包括任务分类、提醒功能、数据可视化统计和团队协作功能。
+                </p>
+                <a href="#" class="btn">查看项目</a>
+            </div>
+
+            <div class="project">
+                <h3>开源库贡献</h3>
+                <p>
+                    积极参与多个开源项目，贡献代码并帮助解决issues。主要贡献了一个
+                    用于简化API调用的JavaScript工具库，目前已有超过500stars。
+                </p>
+                <a href="#" class="btn">查看项目</a>
+            </div>
+
+            <div class="project">
+                <h3>个人技术博客</h3>
+                <p>
+                    基于Gatsby构建的静态博客网站，分享技术心得和学习笔记。
+                    内容涵盖前端开发、后端架构、算法分析等多个领域的技术文章。
+                </p>
+                <a href="#" class="btn">访问博客</a>
+            </div>
+
+            <h2>教育背景</h2>
+            <div class="project">
+                <h3>XX大学 - 计算机科学与技术</h3>
+                <p>本科学位 | 2016年9月 - 2020年6月</p>
+            </div>
+
+            <h2>联系我</h2>
+            <p>
+                如果您对我的项目感兴趣或者有合作意向，欢迎通过以下方式联系我：
+            </p>
+            <p>
+                Email: your.email@example.com<br>
+                GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a><br>
+                LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 你的名字. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
