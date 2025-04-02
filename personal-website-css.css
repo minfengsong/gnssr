@@ -1,0 +1,180 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 导航栏 */
+header {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.site-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* 关于我部分 */
+.about-me {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.about-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    flex: 0 0 200px;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* 新闻部分 */
+.news-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.news-date {
+    flex: 0 0 70px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.month {
+    font-weight: bold;
+}
+
+.year {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-content p {
+    margin-bottom: 5px;
+}
+
+.news-content i {
+    margin-right: 5px;
+    color: #888;
+}
+
+.news-content strong {
+    font-weight: bold;
+}
+
+/* 页脚 */
+footer {
+    margin-top: 50px;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+
+.world-map {
+    text-align: center;
+}
+
+.world-map img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    
+    .profile-image {
+        margin: 0 auto 20px;
+    }
+    
+    .news-item {
+        flex-direction: column;
+    }
+    
+    .news-date {
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+    }
+}
