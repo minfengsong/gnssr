@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes - 个人学术网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .code-project {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .code-project:last-child {
+            border-bottom: none;
+        }
+        
+        .code-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .code-meta {
+            display: flex;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .code-date {
+            margin-right: 20px;
+        }
+        
+        .code-language {
+            margin-right: 20px;
+        }
+        
+        .code-description {
+            margin-bottom: 15px;
+        }
+        
+        .code-links {
+            margin-top: 15px;
+        }
+        
+        .code-links a {
+            display: inline-block;
+            margin-right: 15px;
+            background-color: #f5f5f5;
+            padding: 5px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        
+        .code-links a:hover {
+            background-color: #e5e5e5;
+        }
+        
+        .code-image {
+            max-width: 100%;
+            margin: 10px 0;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="site-title"><a href="index.html">您的名字</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="codes.html">Codes</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Codes & Software</h2>
+        
+        <div class="code-project">
+            <div class="code-title">
+                Python C Extension for Dislocation Analysis
+            </div>
+            <div class="code-meta">
+                <div class="code-date"><i class="far fa-calendar-alt"></i> March 2025</div>
+                <div class="code-language"><i class="fas fa-code"></i> Python, C</div>
+                <div class="code-type"><i class="fas fa-laptop-code"></i> Research Software</div>
+            </div>
+            <div class="code-description">
+                <p>This Python C extension implements classical Okada and TDEs (Triangular Dislocation Elements) algorithms for efficient computation of surface displacements caused by subsurface dislocations. The implementation is optimized for large-scale analyses with significant performance improvements over pure Python implementations.</p>
+                <p>Key features include:</p>
+                <ul>
+                    <li>Fast C implementation of Okada's solutions</li>
+                    <li>Support for triangular dislocation elements</li>
+                    <li>Parallelized computation for large datasets</li>
+                    <li>Python interface with NumPy integration</li>
+                </ul>
+            </div>
+            <img src="images/code-preview1.jpg" alt="Code Preview" class="code-image">
+            <div class="code-links">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fas fa-book"></i> Documentation</a>
+                <a href="#"><i class="fas fa-download"></i> Download</a>
+            </div>
+        </div>
+        
+        <div class="code-project">
+            <div class="code-title">
+                Earthquake Data Analysis Toolkit
+            </div>
+            <div class="code-meta">
+                <div class="code-date"><i class="far fa-calendar-alt"></i> November 2024</div>
+                <div class="code-language"><i class="fas fa-code"></i> Python</div>
+                <div class="code-type"><i class="fas fa-laptop-code"></i> Data Analysis</div>
+            </div>
+            <div class="code-description">
+                <p>A comprehensive Python package for processing and analyzing earthquake-related datasets. This toolkit provides functions for data cleaning, statistical analysis, visualization, and modeling of seismic data.</p>
+                <p>Main components:</p>
+                <ul>
+                    <li>Data importers for common seismic data formats</li>
+                    <li>Signal processing utilities for seismogram analysis</li>
+                    <li>Statistical tools for earthquake catalog analysis</li>
+                    <li>Visualization modules for creating publication-quality figures</li>
+                </ul>
+            </div>
+            <img src="images/code-preview2.jpg" alt="Code Preview" class="code-image">
+            <div class="code-links">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fas fa-book"></i> Documentation</a>
+                <a href="#"><i class="fas fa-flask"></i> Examples</a>
+            </div>
+        </div>
+        
+        <div class="code-project">
+            <div class="code-title">
+                InSAR Processing Pipeline
+            </div>
+            <div class="code-meta">
+                <div class="code-date"><i class="far fa-calendar-alt"></i> June 2023</div>
+                <div class="code-language"><i class="fas fa-code"></i> Python, MATLAB</div>
+                <div class="code-type"><i class="fas fa-laptop-code"></i> Remote Sensing</div>
+            </div>
+            <div class="code-description">
+                <p>An end-to-end processing pipeline for Interferometric Synthetic Aperture Radar (InSAR) data analysis. The pipeline automates the process from raw data to displacement time series and includes tools for noise reduction and deformation modeling.</p>
+                <p>Features:</p>
+                <ul>
+                    <li>Automatic atmospheric correction</li>
+                    <li>Time series analysis with SBAS algorithm</li>
+                    <li>Integration with geophysical modeling tools</li>
+                    <li>GIS-compatible output formats</li>
+                </ul>
+            </div>
+            <img src="images/code-preview3.jpg" alt="Code Preview" class="code-image">
+            <div class="code-links">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fas fa-book"></i> Documentation</a>
+                <a href="#"><i class="fas fa-graduation-cap"></i> Tutorial</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="world-map">
+                    <img src="images/world-map.png" alt="World Map">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
